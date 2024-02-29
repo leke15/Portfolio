@@ -7,6 +7,7 @@ body {
 .header {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .logo_img {
@@ -21,19 +22,29 @@ body {
 
 .navbar {
   display: flex;
-  margin-left: 35%;
-  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  /* Add other styles as needed */
 }
 
-.navbar a {
+.navbar-links {
+  margin-left: 25rem;
+}
+.navbar-links > a:link {
+  padding: 20px;
+  margin-left: 30px;
   color: var(--primary-color);
-  padding: 0.9rem;
-  font-size: 1rem;
-  border-radius: 30px;
+  text-decoration: none;
+  border-radius: 35px;
   transition: var(--transition);
 }
 
-.navbar a:hover {
+.navbar-links > a:visited {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.navbar-links a:hover {
   background: var(--primary-color);
   color: black;
 }
@@ -82,10 +93,22 @@ body {
   border-radius: 20px;
 }
 
+.responsive__menu {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+.moblieMenu-icon {
+  visibility: hidden;
+}
+
 @media (max-width: 1024px) {
-  .navbar {
-    flex-direction: column;
-    margin-left: 0;
+  .logo_img {
+    margin-top: 0px;
+  }
+
+  .header {
+    height: 100px;
   }
 
   .intro__panel,
@@ -111,24 +134,55 @@ body {
   }
 
   .motto {
+    margin-top: 2px;
     padding-right: 6rem;
+  }
+
+  .responsive__menu {
+    display: flex;
+    margin-top: 1rem;
+    padding-left: 20rem;
+  }
+
+  .navbar-links {
+    margin-left: 0;
   }
 }
 
 /* Smartphones */
 @media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    margin-left: 0;
-  }
-
   .intro__panel,
   .right__panel {
     flex-direction: column;
   }
 
+  .motto {
+    font-size: 20px;
+  }
+
+  .cta {
+    margin-left: -20px;
+  }
+
   .panel__img {
-    width: 100%;
-    margin-left: 0;
+    width: 80%;
+    padding-left: 6px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .moblieMenu-icon {
+    visibility: visible;
+    margin-left: 7rem;
+  }
+
+  .navbar-links2 {
+    display: block;
+    height: 230px;
+    background: pink;
+    margin-top: 20rem;
+    bottom: 20rem;
   }
 }

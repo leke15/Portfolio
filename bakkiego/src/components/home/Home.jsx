@@ -1,9 +1,11 @@
 import React from "react";
 import Logo from "../../assets/logo.jpg";
 import Movers from "../../assets/movers.jpg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import "./home.css";
+import Navbar from "../NavBar/Navbar";
 
 const Home = () => {
   return (
@@ -12,15 +14,19 @@ const Home = () => {
         <img src={Logo} alt="Bakkiego" className="logo_img" />
 
         <nav className="navbar">
-          <a href="#introduction">Ride</a>
-          <a href="#drive">Drive</a>
-          <a href="#business">Business</a>
-          <a href="#about">About</a>
-
-          <FontAwesomeIcon icon={faBars} />
+          {/*navigation links */}
+          <div className="moblieMenu-icon">
+            <FontAwesomeIcon icon={faBars} />
+          </div>
+          <div className="navbar-links navbar-links2">
+            <Link to="/">Home</Link>
+            <Link to="/introduction">About</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/business">Business</Link>
+            <Link to="/contact">Contact</Link>
+          </div>
         </nav>
       </div>
-
       <div className="container intro__panel">
         <div className="right__panel">
           <h2 className="motto">
@@ -41,7 +47,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-          <img src={Movers} alt="Movers" className="panel__img" />
+        <img src={Movers} alt="Movers" className="panel__img" />
       </div>
     </section>
   );
