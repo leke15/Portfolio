@@ -3,9 +3,7 @@ import Logo from "../../assets/logo.jpg";
 import Movers from "../../assets/movers.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import "./home.css";
-import Navbar from "../NavBar/Navbar";
 
 const Home = () => {
   return (
@@ -19,11 +17,11 @@ const Home = () => {
             <FontAwesomeIcon icon={faBars} />
           </div>
           <div className="navbar-links navbar-links2">
-            <Link to="/">Home</Link>
-            <Link to="/introduction">About</Link>
-            <Link to="/services">Services</Link>
-            <Link to="/business">Business</Link>
-            <Link to="/contact">Contact</Link>
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#business">Business</a>
+            <a href="#contact">Contact</a>
           </div>
         </nav>
       </div>

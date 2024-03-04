@@ -1,8 +1,14 @@
+import React from "react";
 import Home from "./components/home/Home";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import About from "./components/about/About";
 
-function App() {
-  return <Home />;
+const App = () => {
+  return (
+    <>
+    <Home />
+    <About />
+    </>
+  );
 }
 
 export default App;

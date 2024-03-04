@@ -1,0 +1,66 @@
+section#about {
+  display: flex;
+  align-items: center;
+  background: var(--primary-color);
+  height: 80vh;
+}
+
+.car-img {
+  width: 500px;
+  height: 470px;
+  border-radius: 20px;
+  margin: 0px 20px 10px 10px;
+}
+
+#earn {
+  margin-left: 150px;
+  margin-top: 10px;
+}
+
+#earn > a {
+  color: white;
+  background: var(--secondary-color);
+  padding: 10px;
+  border-radius: 30px;
+  transition: var(--transition);
+}
+
+#earn > a:hover {
+  color: var(--primary-color);
+  background: black;
+  border: 1px solid var(--primary-color);
+}
+
+.about-header,
+.about-text {
+  color: black;
+}
+
+.about-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.outline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.outline-item {
+  width: 242px;
+  height: 260px;
+  background: black;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.outline-text {
+  color: var(--primary-color);
+  font-size: 18px;
+  padding: 5px;
+}
+
+.tick-icon {
+  font-size: 1.5rem;
+}
