@@ -64,3 +64,36 @@ section#about {
 .tick-icon {
   font-size: 1.5rem;
 }
+
+@media (max-width: 1024px) {
+  section#about {
+    display: block;
+  }
+
+  .car-img {
+    height: 300px;
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  .right-panel{
+    position: relative;
+  }
+
+  #earn > a {
+    position: relative;
+    top: 530px;
+    left: 170px;
+    padding: 20px;
+  }
+
+  .about-header,
+  .about-text {
+    text-align: center;
+  }
+
+  .outline{
+    margin-left: 10px;
+  }
+}
