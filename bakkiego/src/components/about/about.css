@@ -68,6 +68,7 @@ section#about {
 
 .tick-icon {
   font-size: 1.5rem;
+  color: white;
 }
 
 @media (max-width: 1024px) {
