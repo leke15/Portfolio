@@ -52,7 +52,7 @@ const Contact = () => {
             <h4>Facebook</h4>
             <h5>Bakkiego</h5>
             <a href="https://www.facebook.com/Bakkiegoapp" target="_blank">
-              Send a Message
+              View our Profile
             </a>
           </article>
 

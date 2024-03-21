@@ -79,4 +79,6 @@ textarea {
 }
 
 .contact-btn:hover {
+  background: white;
+  color: var(--secondary-color);
 }
