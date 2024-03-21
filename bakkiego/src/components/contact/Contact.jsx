@@ -43,7 +43,7 @@ const Contact = () => {
             </a>
           </article>
 
-          {/* Instagram */}
+          {/* Facebook */}
           <article className="contact__option">
             <FontAwesomeIcon
               icon={faFacebook}
