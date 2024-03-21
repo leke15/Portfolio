@@ -26,7 +26,7 @@ const Service = () => {
           <h3 className="item-name">Smart 1</h3>
           <h4 className="item-desc">Trucks weighing from 500kg to 1 tons</h4>
           <div className="item-cta">
-            <a href="#">Order Now</a>
+            <a href="https://play.google.com/store/apps/details?id=com.bakkiego.customer&pcampaignid=web_share">Order Now</a>
           </div>
         </article>
         {/* Service 2  */}
@@ -37,7 +37,7 @@ const Service = () => {
           <h3 className="item-name">Smart 2</h3>
           <h4 className="item-desc">Trucks weighing from 1tons to 2 tons</h4>
           <div className="item-cta">
-            <a href="#">Order Now</a>
+            <a href="https://play.google.com/store/apps/details?id=com.bakkiego.customer&pcampaignid=web_share">Order Now</a>
           </div>
         </article>
         {/*  service 3 */}
@@ -48,7 +48,7 @@ const Service = () => {
           <h3 className="item-name">Leggo</h3>
           <h4 className="item-desc">Trucks weighing from 2tons to 4tons</h4>
           <div className="item-cta">
-            <a href="#">Order Now</a>
+            <a href="https://play.google.com/store/apps/details?id=com.bakkiego.customer&pcampaignid=web_share">Order Now</a>
           </div>
         </article>
         {/* service 4 */}
@@ -59,7 +59,7 @@ const Service = () => {
           <h3 className="item-name">Combo</h3>
           <h4 className="item-desc">Trucks weighing from 4tons to 8tons</h4>
           <div className="item-cta">
-            <a href="#">Order Now</a>
+            <a href="https://play.google.com/store/apps/details?id=com.bakkiego.customer&pcampaignid=web_share">Order Now</a>
           </div>
         </article>
       </div>
