@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../assets/logo.jpg";
 import Movers from "../../assets/movers.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,6 +6,12 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./home.css";
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <section className="container">
       <div className="header">
@@ -13,9 +19,6 @@ const Home = () => {
 
         <nav className="navbar">
           {/*navigation links */}
-          <div className="moblieMenu-icon">
-            <FontAwesomeIcon icon={faBars} />
-          </div>
           <div className="navbar-links navbar-links2">
             <a href="/">Home</a>
             <a href="#about">About</a>
@@ -24,6 +27,23 @@ const Home = () => {
             <a href="#contact">Contact</a>
           </div>
         </nav>
+      </div>
+      {/* mobile nav-bar */}
+      <div className="mobile-nav-container">
+        <div className="mobile-nav-buttons" onClick={toggleNav}>
+          <FontAwesomeIcon icon={isOpen ? faXmark: faBars} />
+        </div>
+        {isOpen && (
+          <nav className="mobile-navbar">
+            <div className="mobile-navbar-links">
+              <a href="/">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#business">Business</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </nav>
+        )}
       </div>
       <div className="container intro__panel">
         <div className="right__panel">
