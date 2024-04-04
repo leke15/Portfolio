@@ -116,7 +116,12 @@
 
 @media (max-width: 600px) {
   .container {
-    height: 60vh;
+    height: 70vh;
+    width: 45vh;
+  }
+  .mobile-nav-buttons {
+    transform: translateX(80%);
+    margin-top: -2rem;
   }
   .navbar {
     display: none;
@@ -136,7 +141,17 @@
   .cta,
   .motto_text {
     margin: 0;
-    margin-left: -30px;
+    margin-left: -40px;
+    margin-bottom: 20px;
+  }
+
+  .motto {
+    font-size: 20px;
+  }
+
+  .motto_text {
+    text-align: left;
+    font-size: 10px;
   }
 
   .cta {
