@@ -30,45 +30,45 @@ const About = () => {
 
         {/* Outline Section 1 */}
         <div className="outline">
-        <div className="outline-item">
-          <div className="tick-icon">
-            <FontAwesomeIcon icon={faCircleCheck} />
+          <div className="outline-item">
+            <div className="tick-icon">
+              <FontAwesomeIcon icon={faCircleCheck} />
+            </div>
+            <div className="outline-text">
+              <h5>
+                Lifters Option : We know that sometimes it requires more than
+                yourself to lift the goods into your truck so we have the option
+                of lifters included in our App.
+              </h5>
+            </div>
           </div>
-          <div className="outline-text">
-            <h5>
-              Lifters Option :We know that sometimes it requires more than
-              yourself to lift the goods into your truck so we have the option
-              of lifters included in our App.
-            </h5>
-          </div>
-        </div>
 
-        {/* Outline Section 2 */}
-        <div className="outline-item">
-          <div className="tick-icon">
-            <FontAwesomeIcon icon={faCircleCheck} />
+          {/* Outline Section 2 */}
+          <div className="outline-item">
+            <div className="tick-icon">
+              <FontAwesomeIcon icon={faCircleCheck} />
+            </div>
+            <div className="outline-text">
+              <h5>
+                Picture Demand: Sometimes Distance and verbal conversations do
+                not explain what you need to pick up, so we also have picture
+                demand before you bargain
+              </h5>
+            </div>
           </div>
-          <div className="outline-text">
-            <h5>
-              Picture Demand: Sometimes Distance and verbal conversations do not
-              explain what you need to pick up, so we also have picture demand
-              before you bargain
-            </h5>
+          {/* Outline Section 3 */}
+          <div className="outline-item">
+            <div className="tick-icon">
+              <FontAwesomeIcon icon={faCircleCheck} />
+            </div>
+            <div className="outline-text">
+              <h5>
+                Open bargain : Your price is determined by a fair bargaining
+                system on our App, customer offers a price you either accept or
+                make a counter offer
+              </h5>
+            </div>
           </div>
-        </div>
-        {/* Outline Section 3 */}
-        <div className="outline-item">
-          <div className="tick-icon">
-            <FontAwesomeIcon icon={faCircleCheck} />
-          </div>
-          <div className="outline-text">
-            <h5>
-              Open bargain :Your price is determined by a fair bargaining system
-              on our App, customer offers a price you either accept or make a
-              counter offer
-            </h5>
-          </div>
-        </div>
         </div>
         {/* End of section outline */}
       </div>

@@ -71,17 +71,15 @@ section#about {
   color: white;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   section#about {
     display: block;
     height: 90vh;
+    width: 43.9vh;
   }
 
   .car-img {
-    height: 300px;
-    width: 600px;
-    margin-top: 20px;
-    margin-left: 100px;
+    display: none;
   }
 
   .right-panel {
@@ -90,17 +88,32 @@ section#about {
 
   #earn > a {
     position: relative;
-    top: 510px;
-    left: 170px;
+    top: 650px;
     padding: 20px;
+    margin-left: -20px;
   }
 
-  .about-header,
-  .about-text {
-    text-align: center;
+  .about-header {
+    margin-left: 10px;
+    font-size: 20px;
   }
 
   .outline {
     margin-left: 10px;
+  }
+
+  .outline-item {
+    width: 100px;
+    height: 300px;
+  }
+
+  .about-text {
+    font-size: 3vw;
+    overflow-wrap: break-word;
+    margin-left: 3px;
+  }
+
+  .outline-text {
+    font-size: 15px;
   }
 }
