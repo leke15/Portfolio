@@ -115,3 +115,29 @@ section#services {
   font-size: 18px;
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  section#services {
+    height: 320vh;
+  }
+  .services-container {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 22px;
+  }
+
+  .service-item {
+    height: 300px;
+  }
+
+  .features-container {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 22px;
+  }
+
+  .feature-item {
+    height: 400px;
+    margin-bottom: 10px;
+  }
+}
