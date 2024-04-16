@@ -82,3 +82,18 @@ textarea {
   background: white;
   color: var(--secondary-color);
 }
+
+@media (max-width: 600px) {
+  .contact__option {
+    background: var(--primary-color);
+    margin-left: -5px;
+  }
+
+  .contact-container {
+    width: 70%;
+  }
+
+  textarea {
+    height: 200px;
+  }
+}
