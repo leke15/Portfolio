@@ -42,3 +42,24 @@ a:hover {
 .footer-copyright {
   color: white;
 }
+
+@media (max-width: 600px) {
+  .logo-img {
+    margin-left: 150px;
+    height: 100px;
+  }
+
+  .links {
+    margin-left: 5px;
+    display: block;
+  }
+
+  li {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .social-icon {
+    margin-left: 50px;
+  }
+}
