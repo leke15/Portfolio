@@ -14,11 +14,11 @@ const DownloadApp = () => {
         <div className="cta-details">
           <div className="download-details">
             <h2 className="cta-text">
-              Get the Bakkiego App now! From all online app stores
+              Get the Bakkiego App now! From all the google play app store
             </h2>
             <h5 className="cta-desc">
-              Bakkiego is available on Google Playstore.
-              Download now and experience delivery at a fair price.
+              Bakkiego is available on Google Playstore. Download now and
+              experience delivery at a fair price.
             </h5>
             <div className="download-btn">
               <a href="https://play.google.com/store/apps/details?id=com.bakkiego.customer&pcampaignid=web_share">
@@ -29,7 +29,7 @@ const DownloadApp = () => {
 
           {/* App image preview */}
           <div className="hand">
-            <img src={hand} alt="App preview image" className="hand-img"/>
+            <img src={hand} alt="App preview image" className="hand-img" />
           </div>
         </div>
       </div>

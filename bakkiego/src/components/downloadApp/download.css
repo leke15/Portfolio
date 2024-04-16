@@ -61,3 +61,48 @@ section#cta {
   background: black;
   border: 1px solid var(--primary-color);
 }
+
+@media (max-width: 600px) {
+  .background-img {
+    width: 330px;
+    height: 200px;
+    z-index: 2;
+  }
+
+  .background {
+    margin-left: 20px;
+  }
+
+  .cta-text,
+  .cta-desc {
+    margin-bottom: 0px;
+    margin-left: -50px;
+    z-index: 1;
+  }
+
+  .cta-text {
+    width: 300px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    margin-left: -160px;
+    font-size: 18px;
+    text-align: justify;
+  }
+  .cta-desc {
+    width: 300px;
+    margin-left: -150px;
+    word-wrap: break-word;
+  }
+  .cta-panel {
+    margin-top: -150px;
+  }
+
+  .download-btn {
+    margin-top: 20px;
+    margin-left: -100px;
+  }
+
+  .hand-img {
+    display: none;
+  }
+}
