@@ -1,4 +1,10 @@
 import React, { useState } from "react";
+import { HashLink as Link } from 'react-router-hash-link';
+import About from "../../components/about/About";
+import Service from "../../components/services/Service";
+import DownloadApp from "../../components/downloadApp/DownloadApp";
+import Contact from "../../components/contact/Contact";
+import Footer from "../../components/footer/Footer";
 import Logo from "../../assets/logo.jpg";
 import Movers from "../../assets/movers.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,13 +26,13 @@ const Home = () => {
         <nav className="navbar">
           {/*navigation links */}
           <div className="navbar-links navbar-links2">
-            <a href="/">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#business">Business</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </nav>
+          <Link smooth to="/#home">Home</Link> {/* Use HashLink for smooth scroll */}
+          <Link smooth to="/#about">About</Link>
+          <Link smooth to="/#services">Services</Link>
+          <Link to="/business">Business</Link> {/* Keep this as NavLink if it's a different route */}
+          <Link smooth to="/#contact">Contact</Link>
+        </div>
+      </nav>
       </div>
       {/* mobile nav-bar */}
       <div className="mobile-nav-container">
@@ -67,6 +73,11 @@ const Home = () => {
         </div>
         <img src={Movers} alt="Movers" className="panel__img" />
       </div>
+      <About />
+      <Service />
+      <DownloadApp />
+      <Contact />
+      <Footer/>
     </section>
   );
 };

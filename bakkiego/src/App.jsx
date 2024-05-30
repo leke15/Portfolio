@@ -1,20 +1,16 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./components/home/Home";
-import About from "./components/about/About";
-import Service from "./components/services/Service";
-import DownloadApp from "./components/downloadApp/DownloadApp";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
+import Business from "./components/business/business";
+
 const App = () => {
   return (
-    <>
-      <Home />
-      <About />
-      <Service />
-      <DownloadApp />
-      <Contact />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/business" element={<Business />} />
+        <Route path="/" element={<Home/>} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

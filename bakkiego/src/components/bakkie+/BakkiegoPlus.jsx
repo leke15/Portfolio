@@ -2,7 +2,9 @@ import React from 'react'
 
 const BakkiegoPlus = () => {
   return (
-    <div>BakkiegoPlus</div>
+    <div>BakkiegoPlus
+      
+    </div>
   )
 }
 
